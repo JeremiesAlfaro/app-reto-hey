@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="p-inputgroup">
+        <span class="p-inputgroup-addon">
+            $
+        </span>
+        <input [(ngModel)]="inputValue" pInputText placeholder="Ingese la cantidad" />
+        <button type="button" pButton icon="pi pi-check" styleClass="p-button-danger" (click)="calcular()"></button>
+</div>
+<div class="container2" *ngIf="pressedButton">
+    <div >
+        <p-card header="50">Gastos necesarios: ${{value50}}</p-card>
+    </div>
+    <div class="div1">
+        <p-card header="30">Gastar como quieres: ${{value30}}</p-card>
+    </div>
+    <div class="div1">
+        <p-card header="20">Ahorro: ${{value20}}</p-card>
+    </div>
+</div>

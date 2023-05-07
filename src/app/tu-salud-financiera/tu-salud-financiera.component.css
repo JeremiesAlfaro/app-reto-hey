@@ -1,19 +1,18 @@
 .container {
     display: inline-flex;
-    justify-content: center;
+    justify-content: top;
     align-items: center;
-    width: 50%;
     height: calc(100vh - 172.08px);
     flex-direction: column;
-}
-.div1 {
-    margin-bottom: 50px;
+    margin-top: 50px;
 }
 .container2 {
     display: inline-flex;
     justify-content: center;
-    align-items: right;
-    width: 50%;
+    align-items: center;
     height: calc(100vh - 172.08px);
-    flex-direction: column;
+    flex-direction: row;
+}
+.div1 {
+    margin-left: 100px;
 }

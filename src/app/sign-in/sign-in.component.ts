@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 export class SignInComponent {
 
   constructor(private router: Router) { }
-enter(){
-  this.router.navigate(['/menu']);
-}
+  enter() {
+    this.router.navigate(['/menu']);
+  }
 }

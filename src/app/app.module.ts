@@ -1,8 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TuSaludFinancieraComponent } from './tu-salud-financiera/tu-salud-financiera.component';
+import { MenuComponent } from './menu/menu.component';
 
 import { ToolbarModule } from 'primeng/toolbar';
 import { ImageModule } from 'primeng/image';
@@ -13,14 +16,14 @@ import { CardModule } from 'primeng/card';
 import { InputTextModule } from 'primeng/inputtext';
 import { CheckboxModule } from 'primeng/checkbox';
 import { RadioButtonModule } from 'primeng/radiobutton';
-import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeComponent,
     SignInComponent,
-    MenuComponent
+    MenuComponent,
+    TuSaludFinancieraComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +34,8 @@ import { MenuComponent } from './menu/menu.component';
     CardModule,
     InputTextModule,
     CheckboxModule,
-    RadioButtonModule
+    RadioButtonModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
